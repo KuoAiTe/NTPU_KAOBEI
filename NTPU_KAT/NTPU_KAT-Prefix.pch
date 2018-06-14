@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define DBNAME    @"KaoBei.sqlite"
+#define TABLENAME @"KaoBei"
+#define RGB(R, G, B)  ([UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f])
+#define RGBA(R, G, B,A)  ([UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A])
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IS_OS_5_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0)
+#define IS_OS_6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
+#define IS_OS_7_BEFORE    ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0)
+#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define TabBarHeight                        49
+#define NavHeight   44
+#define StatusBarCurHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define StatusBarHeight 20
+#define DeviceWidth [[ UIScreen mainScreen ] bounds ].size.width
+#define DeviceHeight [[ UIScreen mainScreen ] bounds ].size.height
+#define BodyHeight (DeviceHeight - NavHeight - StatusBarHeight - TabBarHeight)
+#define Settings [NSUserDefaults standardUserDefaults]
+#define Access_Token @"511407152280214|61621b666f55abcbdd7abcccb136d24e"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutAiTe">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="author.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z84-YY-ScB">
+                    <rect key="frame" x="195" y="38" width="146" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="MIn-3l-dGn"/>
+                        <constraint firstAttribute="width" secondItem="z84-YY-ScB" secondAttribute="height" multiplier="73:130" id="lxZ-Ba-XSE"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMQ-s9-m15">
+                    <rect key="frame" x="128" y="326" width="251" height="155"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">目前就讀於臺北大學資工系四年級
+平時沒事喜歡做一些亂七八糟的東西
+目前正在準備研究所考試
+以下是我的聯絡方式，歡迎反應意見或合作
+FB : http://fb.com/KuoAiTe
+Line : KuoAiTe
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="QMQ-s9-m15" secondAttribute="centerX" constant="21" id="3jf-PC-HXL"/>
+                <constraint firstItem="QMQ-s9-m15" firstAttribute="top" secondItem="z84-YY-ScB" secondAttribute="bottom" constant="5" id="4PL-0E-aNg"/>
+                <constraint firstItem="z84-YY-ScB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="Fww-KU-veK"/>
+                <constraint firstItem="z84-YY-ScB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="YiD-Ja-vFg"/>
+                <constraint firstAttribute="centerX" secondItem="z84-YY-ScB" secondAttribute="centerX" id="ghx-pg-Jlk"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z84-YY-ScB" secondAttribute="trailing" constant="80" id="r8d-Ns-7ca"/>
+                <constraint firstItem="QMQ-s9-m15" firstAttribute="top" secondItem="z84-YY-ScB" secondAttribute="bottom" constant="28" id="vYf-0u-yF0"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="author.jpg" width="540" height="960"/>
+    </resources>
+</document>
